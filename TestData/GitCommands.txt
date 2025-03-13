@@ -1,0 +1,182 @@
+ Basic Git Commands 
+
+1. **Configure Git (One-time setup)**  
+   ```bash
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
+   ```
+
+2. **Initialize a Git Repository**  
+   ```bash
+   git init
+   ```
+
+3. **Clone an Existing Repository**  
+   ```bash
+   git clone <repository_url>
+   ```
+
+4. **Check Repository Status**  
+   ```bash
+   git status
+   ```
+
+---
+
+### **Working with Files**
+5. **Add Changes to Staging Area**  
+   ```bash
+   git add <file_name>       # Add specific file  
+   git add .                 # Add all modified files  
+   ```
+
+6. **Commit Changes**  
+   ```bash
+   git commit -m "Meaningful commit message"
+   ```
+
+7. **Modify Last Commit (if not pushed yet)**  
+   ```bash
+   git commit --amend -m "Updated commit message"
+   ```
+
+8. **Remove a File from Staging Area**  
+   ```bash
+   git reset <file_name>
+   ```
+
+9. **Delete a File and Remove from Git**  
+   ```bash
+   git rm <file_name>
+   git commit -m "Removed file_name"
+   ```
+
+---
+
+### **Branching & Merging**
+10. **Check Current Branch**  
+   ```bash
+   git branch
+   ```
+
+11. **Create a New Branch**  
+   ```bash
+   git branch <branch_name>
+   ```
+
+12. **Switch to a Different Branch**  
+   ```bash
+   git checkout <branch_name>
+   ```
+
+13. **Create and Switch to a New Branch**  
+   ```bash
+   git checkout -b <branch_name>
+   ```
+
+14. **Merge Branches**  
+   ```bash
+   git checkout main
+   git merge <branch_name>
+   ```
+
+15. **Delete a Branch**  
+   ```bash
+   git branch -d <branch_name>  # Delete local branch  
+   git push origin --delete <branch_name>  # Delete remote branch  
+   ```
+
+---
+
+### **Working with Remote Repository**
+16. **Check Remote Repositories**  
+   ```bash
+   git remote -v
+   ```
+
+17. **Push Changes to Remote Repository**  
+   ```bash
+   git push origin <branch_name>
+   ```
+
+18. **Pull Latest Changes from Remote**  
+   ```bash
+   git pull origin <branch_name>
+   ```
+
+19. **Fetch Changes Without Merging**  
+   ```bash
+   git fetch origin
+   ```
+
+20. **Force Push (Use with Caution)**  
+   ```bash
+   git push --force
+   ```
+
+---
+
+### **Undo & Fix Mistakes**
+21. **Undo Last Commit (Before Push)**  
+   ```bash
+   git reset --soft HEAD~1  # Keep changes  
+   git reset --hard HEAD~1  # Discard changes  
+   ```
+
+22. **Revert a Commit (After Push)**  
+   ```bash
+   git revert <commit_id>
+   ```
+
+23. **Stash Uncommitted Changes**  
+   ```bash
+   git stash
+   ```
+
+24. **Apply Stashed Changes**  
+   ```bash
+   git stash pop
+   ```
+
+---
+
+### **Checking Logs & History**
+25. **View Commit History**  
+   ```bash
+   git log
+   ```
+
+26. **View Short History**  
+   ```bash
+   git log --oneline
+   ```
+
+27. **Show Differences Between Commits**  
+   ```bash
+   git diff
+   ```
+
+28. **Show a Specific Commit Details**  
+   ```bash
+   git show <commit_id>
+   ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
