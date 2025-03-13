@@ -1,7 +1,4 @@
 
-
----
-
 >  >  >  OrangeHRM Automation Project    
 
      Overview    
